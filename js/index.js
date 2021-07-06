@@ -33,8 +33,7 @@ bus.addEventListener("click", function (event) {
 document.addEventListener("scroll", function (event) {
   let scrollNum = window.scrollY;
   let yLimit = document.body.offsetHeight - window.innerHeight;
-  console.log(scrollNum + ", " + yLimit);
+  //console.log(scrollNum + ", " + yLimit);
   colorNum = 255 - (scrollNum / yLimit) * 255;
-
   document.body.style.background = `rgb(255, ${colorNum}, ${colorNum})`;
 });
